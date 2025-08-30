@@ -1,0 +1,18 @@
+profiles:
+  vc_africa_generalist:
+    boosts: { problem_market: +1, performance: +1 }
+    caps: { performance: { if_no_local_distribution_proof: 12 } }
+    red_flags: ["B2G sans pipeline signé", "FX/recouvrement non adressés"]
+
+  vc_europe_generalist:
+    boosts: { product_solution: +1 }
+    penalties: { problem_market: { if_sam_below_eur_300m: -2 } }
+    caps: { performance: { if_no_usage_and_no_revenue: 12 } }
+
+  micro_vc_preseed:
+    boosts: { people: +2, product_solution: +1 }
+    caps: { performance: { if_no_mvp: 10 } }
+
+  angel:
+    boosts: { people: +1 }
+    caps: { performance: { if_no_milestones_ofu: 14 } }

@@ -1,0 +1,16 @@
+{
+  "overall": 0,
+  "pillars": {
+    "ProblemMarket": {"score": 0, "items": [{"name": "Pain clarity","score": 0,"why": "slide X"}]},
+    "ProductSolution": {"score": 0, "items": []},
+    "People": {"score": 0, "items": []},
+    "Performance": {"score": 0, "items": []}
+  },
+  "top_actions": [{"rank": 1, "text": ""}, {"rank": 2, "text": ""}, {"rank": 3, "text": ""}],
+  "plan_30_60_90": {"d30": "", "d60": "", "d90": ""},
+  "red_flags": [],
+  "deck_check": {"required_missing": [], "form_score": 0},
+  "audience_profile": "vc_africa_generalist",
+  "sector": "saas",
+  "region": "senegal"
+}

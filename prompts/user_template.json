@@ -1,0 +1,31 @@
+{
+  "slides": [],
+  "audience_profile": "",
+  "sector": "",
+  "region": "",
+  "output_schema": {
+    "summary": "Brief executive summary of the investment opportunity",
+    "company_name": "Name of the company extracted from the pitch deck",
+    "scores": {
+      "team": "Score from 1-10",
+      "market": "Score from 1-10",
+      "product": "Score from 1-10",
+      "traction": "Score from 1-10",
+      "financials": "Score from 1-10",
+      "vision": "Score from 1-10",
+      "overall": "Weighted average score from 1-10"
+    },
+    "analysis": {
+      "team": "Analysis of the founding team",
+      "market": "Analysis of the market opportunity",
+      "product": "Analysis of the product/solution",
+      "traction": "Analysis of current traction and metrics",
+      "financials": "Analysis of the financial model and projections",
+      "vision": "Analysis of the company vision and strategy"
+    },
+    "red_flags": ["List of potential red flags or concerns"],
+    "strengths": ["List of standout strengths"],
+    "investment_recommendation": "Overall investment recommendation (Pass, Consider, Pursue)",
+    "next_steps": ["Recommended next steps or due diligence items"]
+  }
+}
