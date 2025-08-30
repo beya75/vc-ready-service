@@ -1,3 +1,10 @@
+import path from "path";
+import dotenv from "dotenv";
+
+// charge service/.env en dev et en prod (dist/)
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
+
+
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';

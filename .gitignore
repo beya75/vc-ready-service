@@ -1,0 +1,16 @@
+@"
+# Node / TypeScript
+node_modules/
+dist/
+coverage/
+.cache/
+
+# IDE / OS
+.vscode/
+.DS_Store
+
+# Secrets
+.env
+.env.*
+*.log
+"@ | Out-File -Encoding utf8 .gitignore
