@@ -38,11 +38,23 @@ app.use("/v1", (req, res, next) => {
   const expected = (process.env.SERVICE_API_KEY || "").trim();
 
   // Log non sensible (longueurs uniquement)
+  //console.log(
+  //  "[auth] xkey len:", xkey.length,
+  //  "bearer len:", bearer.length,
+  //  "expected len:", expected.length
+  //);
+
+  const peek = (s: string) => s ? (s.slice(0, 6) + "..." + s.slice(-6)) : "(empty)";
   console.log(
-    "[auth] xkey len:", xkey.length,
-    "bearer len:", bearer.length,
-    "expected len:", expected.length
+    "[auth]",
+    "xkey",     peek(xkey),
+    "bearer",   peek(bearer),
+    "expected", peek(expected),
+    "eq",       (xkey === expected || bearer === expected)
   );
+
+  console.log("[auth] header names:", Object.keys(req.headers || {}));
+
 
   if (!expected) return res.status(500).send("Server misconfigured");
   if (key !== expected) return res.status(401).json({ error: "Unauthorized: invalid API key" });
