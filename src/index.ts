@@ -61,6 +61,14 @@ app.use("/v1", (req, res, next) => {
   next();
 });
 
+// dans src/index.ts, juste avant "app.use('/v1/analyses', analysesRouter);"
+
+app.post("/v1/probe", (_req, res) => {
+  console.log("[probe] ok");
+  res.json({ ok: true });
+});
+
+
 // 5) Monte la route analyses
 try {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
